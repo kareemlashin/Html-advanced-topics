@@ -1,0 +1,207 @@
+<!----------  DOCTYPE ----------------
+To render a HTML5 document
+
+----------------------------------->
+<!DOCTYPE html>
+
+
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--![endif]-->
+<html lang="en" class="no-js">
+
+<head>
+    <!--Recommended Meta Tags-->
+    <!--Search Engine Optimization Meta Tags-->
+    <!--Optional Meta Tags-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Page Title - My Site</title> <!-- TODO: update page title -->
+    <meta name="description" content="Page Description"> <!-- TODO: update meta description -->
+    <meta property="og:title" content="Home - Page"> <!-- TODO: update og:title -->
+    <meta property="og:url" content="https://www.example.com/page"> <!-- TODO: update og:url -->
+    <meta property="og:description" content="OG Page Description"> <!-- TODO: update og:description -->
+    <meta property="og:image" content="/path/to/image"> <!-- TODO: og:image -->
+    <meta property="og:image:alt" content="OG Image Description"> <!-- TODO: update og:image:alt -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="large-image-twitter.jpg"> <!-- TODO: update twitter:cared -->
+    <link rel="canonical" href="https://www.example.com/page"> <!-- TODO: update canonical link -->
+    <link rel="icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest"> <!-- TODO: update web app manifest file -->
+    <meta name="theme-color" content="#FF00FF"> <!-- TODO: update meta theme color -->
+    <link rel="stylesheet" href=""> <!-- TODO: Update styles -->
+</head>
+
+<body>
+    <!-- Content here -->
+    <!--=====================================
+    =                 What does async and defer refer in script tag                =
+    ======================================-->
+    [https://i.stack.imgur.com/wfL82.png]
+    <script src="myscript.js"></script>
+
+    <script async src="myscript.js"></script>
+
+    <script defer src="myscript.js"></script>
+    Without async or defer, browser will run your script immediately, before rendering the elements that's below your
+    script tag.
+
+    With async (asynchronous), browser will continue to load the HTML page and render it while the browser load and
+    execute the script at the same time.
+
+    With defer, browser will run your script when the page finished parsing. (not necessary finishing downloading all
+    image files. This is good.)
+
+    <!--=======  End of  What does async and defer refer in script tag  ========-->
+    <!--=====================================
+    =                physical tags and logical tags                =
+    ======================================-->
+    <!-- physical -->
+    <sup></sup> Superscript is usually used for showing elements above base-line
+    <sub></sub> The subscript is used for alternate baseline.
+    <i></i> An Italic tag is used to define a text with a special meaning.
+    <big></big> Big tag increase the font size by 1 (Note: You can not use the big tag in HTML 5)
+    <small></small> A small tag defines the small text, and it is used while writing copyright.
+    <b></b> Bold increases the importance of the text because bold tag covert the text into bold size.
+    <u></u> It is used to underline the text.
+    <tt></tt> Teletype text gives the default font-family which is monospace.
+    <strike></strike> It is an editing markup that tells the reader to ignore the text passage.
+
+    <!-- Logical -->
+    <blockquote> </blockquote>
+    <strong> </strong>
+    <code> </code>
+    <del> </del>
+    <!--=======  End of physical tags and logical tags  ========-->
+    <!--=====================================
+    =                Web Workers                =
+    ======================================-->
+    Web Workers helps us to run javascript code in the background without blocking application.
+    Web Workers runs in an isolated (new) thread for executing our javascript code.
+    Web Workers are usually used for large tasks.
+    Web Workers needs a seperate file for our javascript code.
+    Web Workers files are downloaded asynchronously.
+    Web Workers are supported in all latest browser.
+
+
+    <!--=======  End of Web Workers  ========-->
+    <!--=====================================
+    =                rel="noopener"                =
+    ======================================-->
+    The rel="noopener" is an attribute used in <a> elements (hyperlinks). It prevents pages from having a window.opener
+        property, which would otherwise point to the page from where the link was opened and would allow the page opened
+        from the hyperlink to manipulate the page where the hyperlink is.
+
+
+        <!--=======  End of rel="noopener"  ========-->
+        <!--=====================================
+    =            element vs tag             =
+    ======================================-->
+        <img src="https://i.stack.imgur.com/UCxMx.png" alt="">
+        <tagname>Content goes here...</tagname>
+        HTML tag is just opening or closing entity. For example:
+
+        <p> and </p> are called HTML tags
+
+        HTML element encompasses opening tag, closing tag, content (optional for content-less tags) Eg:
+
+        <p>This is the content</p> : This complete thing is called a HTML element
+
+        <h1></h1>
+        Where as elements are something that consists of start tag and end tag as shown:
+
+        <h1>Heading</h1>
+
+        HTML tags vs. elements vs. attributes
+        HTML elements
+        An element in HTML represents some kind of structure or semantics and generally consists of a start tag,
+        content,
+        and an end tag. The following is a paragraph element:
+
+        <p>
+            This is the content of the paragraph element.
+        </p>
+        HTML tags
+        Tags are used to mark up the start and end of an HTML element.
+
+        <p></p>
+
+        <!--===  End of element vs tag  =====-->
+        <!--=====================================
+    =                 browser rendering engine work                =
+    ======================================-->
+        Document Object Model(DOM)
+        CSS object model(CSSOM)
+        Render Tree
+        <!--=======  End of  browser rendering engine work  ========-->
+
+        <!--=====================================
+    =                iframe                =
+    An iframe is an HTML document which can be embedded inside another HTML page.
+    ======================================-->
+        <iframe src="https://github.com" height="300px" width="300px"></iframe>
+        <!--=======  End of iframe  ========-->
+
+        <!-- Server Side Rendering (SSR) -->
+
+        <!-- Client Side Rendering (CSR) -->
+        <!-- 
+        SSR vs CSR
+        different approaches to rendering web pages
+        ssr rendering web html page when request 
+        [ load time]
+        [seo]
+        []
+     -->
+        <!-- Static Site Generation (SSG) -->
+
+        <!-- ! performance -->
+        <!--  Ways ----------------------------------------------------------------
+        - Optimize images
+        - Minify and compress code
+        - Enable browser caching
+        - Minimize HTTP requests
+        - Optimize server response time
+        - Implement lazy loading
+        - Reduce file sizes
+        - Optimize CSS delivery
+        - Optimize fonts
+        - Optimize JavaScript performance
+        - Implement responsive design
+        - Eliminate unused code and dependencies
+        - Monitor and analyze performance
+        - Put Scripts at the Bottom
+        - Put Stylesheets at the Top
+        - JavaScript and CSS External
+        - Avoid Redirects
+        - Remove Duplicate Scripts
+        - Preload Components
+        - Minimize DOM Access
+     -->
+        <!--  data- attributes good for 
+    When we want to store more information/data about the element when no suitable HTML5
+    -->
+        <article id="electric-cars" data-columns="10" data-index-number="100" data-parent="cars">
+            <h1>Electric Cars</h1>
+        </article>
+        <!-- 
+
+    /**
+ * Access data attribute
+ */
+const article = document.getElementById("electric-cars");
+
+article.dataset.columns; // "10"
+article.dataset.indexNumber; // "100"
+article.dataset.parent; // "cars"
+-->
+
+</body>
+
+</html>
